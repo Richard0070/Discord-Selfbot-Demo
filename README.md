@@ -43,7 +43,7 @@ c. Once we have obtained our token, we'll proceed to the next section.
 ```
 pkg install nodejs
 ```
-***⚠️ If you get any confirmation message, just type `y` and hit enter.***
+⚠️ ***If you get any confirmation message, just type `y` and hit enter.***
 
 Run the following command if nodejs isn't working properly.
 
@@ -58,7 +58,7 @@ termux-setup-storage
 ```
 cd path/to/index.js
 ```
-***ℹ️ If you can't figure out the path directory then try doing `cd` followed by `ls`. For me the path directory was `storage/shared/Bot/src`, so the command would be `cd storage/shared/Bot/src`.***
+ℹ️ ***If you can't figure out the path directory then try doing `cd` followed by `ls`. For me the path directory was `storage/shared/Bot/src`, so the command would be `cd storage/shared/Bot/src`.***
 
 ![Termux-Path-Directory-Help](https://i.ibb.co/J7dNWP9/IMG-20240410-163123.jpg)
 
