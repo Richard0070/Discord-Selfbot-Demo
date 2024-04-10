@@ -119,7 +119,7 @@ client.on('messageCreate', async message => {
     }
 
     if (message.content === 'd!help') {
-        let helpMessage = 'Available commands:\n\n';
+        let helpMessage = '**Available commands:**\n\n';
         helpMessage += '\`d!send <preset> <message>\`: Send a message using a preset.\n';
         helpMessage += '\`d!savepreset <preset> <guildId> <channelId>\`: Save a preset for sending messages.\n';
         helpMessage += '\`d!delpreset <preset>\`: Delete a saved preset.\n';
