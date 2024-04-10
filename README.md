@@ -3,7 +3,7 @@
 This simple Discord selfbot is for educational purposes only, to help users understand how selfbots work and how they can interact with Discord's API. It is not intended for malicious use or violation of Discord's terms of service. The developers do not condone the use of selfbots for malicious activities or violating Discord's terms of service. Use responsibly and at your own risk.
 
 
-## So, let's get started!
+## 😼 So, let's get started!
 
 **Apps Required:** [Termux](https://play.google.com/store/apps/details?id=com.termux), [Spck Code Editor](https://play.google.com/store/apps/details?id=io.spck.editor.node) (or any other code editor)
 
@@ -23,7 +23,7 @@ c. Once we have obtained our token, we'll proceed to the next section.
 
 <hr>
 
-## How to use this selfbot?
+## ❓ How to use this selfbot?
 
 1. Download this repository in `.zip` format.
 
@@ -73,10 +73,10 @@ node index.js
 
 <hr>
 
-## Credits
+## ♥️ Credits
 
 This project utilizes the [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) package developed by [aiko-chan-ai](https://github.com/aiko-chan-ai), which provides the foundation for the selfbot functionality. Huge thanks to them for their contribution!
 
 
 
-♥️ **STAR THIS REPOSITORY PLZ!!!**
+⭐ **STAR THIS REPOSITORY PLZ!!!**
