@@ -76,7 +76,7 @@ node index.js
 
 ## Credits
 
-This project utilizes the [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) package developed by [aiko-chan-ai](https://github.com/aiko-chan-ai), which provides the foundation for the selfbot functionality. Huge thanks to them for their contribution to the Discord community.
+This project utilizes the [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) package developed by [aiko-chan-ai](https://github.com/aiko-chan-ai), which provides the foundation for the selfbot functionality. Huge thanks to them for their contribution!
 
 
 
