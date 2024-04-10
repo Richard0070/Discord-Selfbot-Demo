@@ -69,7 +69,7 @@ node index.js
 6. Once you have successfully logged into your account, you will see this message in the terminal: "Logged in as {username}".
 
 
-**😝 Please do the steps carefully. You can also change your selfbot's prefix by editing the `index.js` file. The default prefix is `d!`. For more info about the commands, run `d!help`.** If you wanna add more cool features, please check [discord.js-selfbot-v13 examples](https://github.com/aiko-chan-ai/discord.js-selfbot-v13/tree/main/examples).
+**😝 Please follow the steps carefully. You can also change your selfbot's prefix by editing the `index.js` file. The default prefix is `d!`. For more info about the commands, run `d!help`.** If you wanna add more cool features, please check [discord.js-selfbot-v13 examples](https://github.com/aiko-chan-ai/discord.js-selfbot-v13/tree/main/examples).
 
 <hr>
 
