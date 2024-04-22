@@ -87,7 +87,7 @@ client.on('messageCreate', async message => {
     }
 
     if (message.content.startsWith('d!channels')) {
-        const args = message.content.slice('drac!channels'.length).trim().split(/ +/);
+        const args = message.content.slice('d!channels'.length).trim().split(/ +/);
         const guildId = args[0];
         const guild = client.guilds.cache.get(guildId);
         if (!guild) return console.error(`Guild ${guildId} not found.`);
