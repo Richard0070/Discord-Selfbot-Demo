@@ -8,7 +8,7 @@ client.on('ready', async () => {
 
 client.on('messageCreate', async message => {
 
-    if (message.content.startsWith('drac!send')) {
+    if (message.content.startsWith('d!send')) {
         const args = message.content.slice('d!send'.length).trim().split(/ +/);
         const preset = args[0];
         const msg = args.slice(1).join(' ');
@@ -63,7 +63,7 @@ client.on('messageCreate', async message => {
     }
 
     if (message.content.startsWith('d!roles')) {
-        const args = message.content.slice('drac!roles'.length).trim().split(/ +/);
+        const args = message.content.slice('d!roles'.length).trim().split(/ +/);
         const guildId = args[0];
 
         const guild = client.guilds.cache.get(guildId);
@@ -105,7 +105,7 @@ client.on('messageCreate', async message => {
     }
 
     if (message.content.startsWith('d!searchchannel')) {
-        const args = message.content.slice('drac!searchchannel'.length).trim().split(/ +/);
+        const args = message.content.slice('d!searchchannel'.length).trim().split(/ +/);
         const name = args[0];
         const guildId = args[1];
         const guild = client.guilds.cache.get(guildId);
