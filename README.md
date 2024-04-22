@@ -45,10 +45,10 @@ pkg install nodejs
 ```
 ⚠️ ***If you get any confirmation message, just type `y` and hit enter.***
 
-Run the following command if nodejs isn't working properly.
+Run the following command if nodejs didn't install properly then try running the above command again
 
 ```
-apt update && apt upgrade -y
+apt upgrade && apt update
 ```
 
 Now,
