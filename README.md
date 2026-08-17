@@ -1,82 +1,97 @@
-# 🔮 Discord Selfbot Demo (For Mobile Users)
+# 🔮 Discord Selfbot Demo
 
-This simple Discord selfbot is for educational purposes only, to help users understand how selfbots work and how they can interact with Discord's API. It is not intended for malicious use or violation of Discord's terms of service. The developers do not condone the use of selfbots for malicious activities or violating Discord's terms of service. Use responsibly and at your own risk.
+A simple experimental Discord selfbot project built to explore Discord's API and Node.js on Android.
 
+> [!WARNING]
+> Selfbots violate Discord's Terms of Service and may result in account termination. This project is for educational purposes only.
 
-## 😼 So, let's get started!
+## Requirements
 
-**Apps Required:** [Termux](https://play.google.com/store/apps/details?id=com.termux), [Spck Code Editor](https://play.google.com/store/apps/details?id=io.spck.editor.node) (or any other code editor)
+- [Termux](https://play.google.com/store/apps/details?id=com.termux)
+- [Spck Editor](https://play.google.com/store/apps/details?id=io.spck.editor.node) or any code editor
+- Node.js
 
-***We'll also require a discord user token for this to work. Here's a short tutorial on how to get your token on mobile —***
+## Setup
 
-a. Open Google Chrome. Go to **Bookmarks**. Save a new Bookmark named `Token` and put this code in the **URL**:
+<br>
 
-```
-javascript:(function () {    location.reload();    var i = document.createElement("iframe");    document.body.appendChild(i);    prompt("Here is your token. Keep it secret", i.contentWindow.localStorage.token.replace(/"/g,""));})();
-```
+### 1. Download
 
-b. Once you've saved it, open [Discord](https://discord.com/app) on chrome. Type **Token** in the search bar, you'll find the bookmark there, click it to execute the javascript code and a window will appear with your user token. Copy that token and save it in clipboard.
-
-⚠️ **Never share your Discord token with anyone. It bypasses 2FA and your account can be compromised.**
-
-c. Once we have obtained our token, we'll proceed to the next section.
-
-<hr>
-
-## ❓ How to use this selfbot?
-
-1. Download this repository in `.zip` format.
+Download the repository as a `.zip` file and extract it.
 
 ![Download-Repo](https://i.ibb.co/jbcvFjq/IMG-20240410-172700.jpg)
 
-2. Extract the zip file, you'll find a folder named `Discord-SelfBot-Demo`. Open it and you'll find another folder with the same name. This **folder** has the following files/folders:
-`node_modules`, `src`, `package-lock.json` and `package.json`. Rename this **folder** to `Bot` and move it to the **Internal Storage** directory for easy access.
+<br>
+
+Move the project folder to your Android internal storage.
 
 ![Save-to-internal-storage](https://i.ibb.co/4dnBxVx/IMG-20240410-160830.jpg)
 
-3. Open the file **index.js** (`Bot/src/index.js`) using the code editor, edit the line `client.login('PUT_YOUR_TOKEN_HERE')` and add your user token.
+<br>
 
-4. Save this new `index.js` file to `Bot/src/`.
+### 2. Configure
 
-5. Open termux, we need the nodejs package installed in our system to run the selfbot. Run these commands step by step:
+Open `src/index.js` in your code editor, edit the line `client.login('PUT_YOUR_TOKEN_HERE')` with your user token. 
 
-```
+<br>
+
+> [!NOTE]
+> To get your Discord User Token, follow this simple tutorial -
+> Open Google Chrome. Go to **Bookmarks**. Save a new Bookmark named `Token` and put this code in the **URL**:  
+> ```  
+> javascript:(function () {    location.reload();    var i = document.createElement("iframe"); document.body.appendChild(i); prompt("Here is your token. Keep it secret", i.contentWindow.localStorage.token.replace(/"/g,""));})();  
+> ```
+> Once you've saved it, open [Discord](https://discord.com/app) on chrome. Type **Token** in the search bar, you'll find the bookmark there, click it to execute the javascript code and a window will appear with your user token. Copy that token and save it in clipboard.  
+
+<br>
+
+> [!CAUTION]
+> Never share your Discord credentials or authentication tokens.
+
+<br>
+
+### 3. Install Node.js
+
+Open Termux and run:
+
+```bash
 pkg install nodejs
 ```
-⚠️ ***If you get any confirmation message, just type `y` and hit enter.***
 
-Run the following command if nodejs isn't working properly.
+Then allow storage access:
 
-```
-apt upgrade && apt update
-```
-
-Now,
-```
+```bash
 termux-setup-storage
 ```
+
+<br>
+
+### 4. Navigate to the project
+
+```bash
+cd storage/shared/Bot/src
 ```
-cd path/to/index.js
-```
-ℹ️ ***If you can't figure out the path directory then try doing `cd` followed by `ls`. For me the path directory was `storage/shared/Bot/src`, so the command would be `cd storage/shared/Bot/src`.***
 
 ![Termux-Path-Directory-Help](https://i.ibb.co/J7dNWP9/IMG-20240410-163123.jpg)
 
-Now start your selfbot,
+<br>
+
+### 5. Install dependencies
+
+```bash
+npm install
 ```
+
+### 6. Run
+
+```bash
 node index.js
 ```
-6. Once you have successfully logged into your account, you will see this message in the terminal: "Logged in as {username}".
 
+The default prefix is `d!`.
 
-**😝 Please follow the steps carefully. You can also change your selfbot's prefix by editing the `index.js` file. The default prefix is `d!`. For more info about the commands, run `d!help`.** If you wanna add more cool features, please check [discord.js-selfbot-v13 examples](https://github.com/aiko-chan-ai/discord.js-selfbot-v13/tree/main/examples).
+## Credits
 
-<hr>
+Built using [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) by [aiko-chan-ai](https://github.com/aiko-chan-ai).
 
-## ♥️ Credits
-
-This project utilizes [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) developed by [aiko-chan-ai](https://github.com/aiko-chan-ai). Huge thanks to them for their contribution!
-
-
-
-⭐ **STAR THIS REPOSITORY PLZ!!!**
+> This project is not affiliated with or endorsed by Discord.
